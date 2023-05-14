@@ -1,0 +1,80 @@
+{% extends 'admin/base.html.twig' %}
+
+{% block title %}Ajouter Produit!{% endblock %}
+
+{% block body %}
+    <!-- Breadcrumb Start -->
+    <div class="container-fluid">
+        <div class="row px-xl-5">
+            <div class="col-12">
+                <nav class="breadcrumb bg-light mb-30">
+                    <a class="breadcrumb-item text-dark" href="#">Acceuil</a>
+                    <span class="breadcrumb-item active">Ajouter Produit</span>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- Breadcrumb End -->
+
+
+    <!-- Contact Start -->
+    <div class="container-fluid">
+        <h2 class="section-title position-relative text-uppercase mx-xl-5 mb-4"><span class="bg-secondary pr-3">PRODUIT</span></h2>
+        <div class="row px-xl-5">
+            <div class="col-lg-7 mb-5">
+                <div class="contact-form bg-light p-30">
+                    <div id="success"></div>
+                    <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                        <div class="control-group">
+                            <input type="text" class="form-control" id="libelle" placeholder="Libellé"
+                                required="required" data-validation-required-message="Entrer votre Libellé svp!" />
+                            <p class="help-block text-danger"></p>
+                        </div>
+
+                        <div class="control-group">
+                            <input type="text" class="form-control" id="prix" placeholder="Prix"
+                                required="required" data-validation-required-message="Entrer votre Prix svp!" />
+                            <p class="help-block text-danger"></p>
+                        </div>
+
+                        <div class="control-group">
+                            <input type="text" class="form-control" id="taille" placeholder="Taille"
+                                required="required" data-validation-required-message="Entrer votre Taille svp!" />
+                            <p class="help-block text-danger"></p>
+                        </div>
+
+                        <div class="control-group">
+                            <input type="text" class="form-control" id="etat" placeholder="Etat"
+                                required="required" data-validation-required-message="Entrer votre Etat svp!" />
+                            <p class="help-block text-danger"></p>
+                        </div>
+
+                        <div class="control-group">
+                            <input type="text" class="form-control" id="couleur" placeholder="Couleur"
+                                required="required" data-validation-required-message="Entrer votre Couleur svp!" />
+                            <p class="help-block text-danger"></p>
+                        </div>
+
+                        <div class="control-group">
+                            <input type="text" class="form-control" id="image" placeholder="Image"
+                                required="required" data-validation-required-message="Selectionner une image svp!" />
+                            <p class="help-block text-danger"></p>
+                        </div>
+
+                        <div class="control-group">
+                            <textarea class="form-control" rows="8" id="description" placeholder="Description"
+                                required="required"
+                                data-validation-required-message="Entrer votre Description svp!"></textarea>
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        
+                        <div>
+                            <button class="btn btn-primary py-2 px-4" type="submit" id="enrigistrer">ENRIGISTRER</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact End -->
+{% endblock %}
